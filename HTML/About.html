@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Store</title>
+    <!-- //////// -->
+    <link rel="icon" type="image/x-icon" href="../images/cherry.webp">
+    <!-- //////// -->
+    <link rel="stylesheet" href="../CSS/css.css">
+    <link rel="stylesheet" href="../CSS/csscont.css">
+    <link rel="stylesheet" href="../CSS/cssabout.css">
+    <!-- //////// -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- ////////////////////// -->
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            Cherry🍒
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="./About.html">About</a>
+            <a href="./Contact US.html">Contact US</a>
+        </div>
+        <!-- Shopping Cart Popup -->
+        <div id="cart-popup" style="display: none;">
+            <h3>Your Cart</h3>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+
+        <!-- Shopping Cart Icon -->
+        <div id="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+
+    </div>
+    <img id="logo" src="../images/logo_prev_ui.png" alt="">
+    <br>
+    <div>
+        <img id="store" src="../images/store.jpg" alt="" style="display: inline-block; vertical-align: top;">
+        <p class="about-text" style="display: inline-block; vertical-align: top; margin-left: 10px;">
+            Welcome to Cherry🍒 Store!
+
+            At Cherry🍒, our love for literature fuels our mission. We are dedicated to providing an enriching
+            literary experience for all. Whether you're a dedicated reader or just beginning your literary journey, we
+            strive to offer a curated selection that caters to diverse tastes.
+
+            Our Commitment:
+
+            At the heart of Cherry🍒 store, we believe in the transformative power of books. Our team is driven by a
+            passion for storytelling, knowledge, and the joy of reading. We are committed to creating an inclusive space
+            where every reader, regardless of background, can find something special.
+
+            Our Vision:
+
+            Our bookstore is more than just a collection of books; it's a community. We aim to foster a welcoming
+            environment where ideas are shared, and connections are made. Through carefully selected titles, we aspire
+            to inspire, entertain, and broaden perspectives.
+
+            Join Our Community:
+
+            Thank you for being a part of our literary journey. Your presence enriches our community, and we value your
+            contribution. If you have any questions, recommendations, or just want to share your thoughts, feel free to
+            reach out. We love hearing from fellow book enthusiasts!
+
+            Happy reading,
+
+            The Cherry🍒 Team
+        </p>
+    </div>
+
+    <div class="location">
+        <h3>Our Location</h3>
+        <iframe width="100%" height="450" frameborder="0" style="border:0"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13817.168794445011!2d31.2017111!3d30.0284739!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145847bb846e3799%3A0x548589ae5d24cbd0!2sITI%20Cairo%20University!5e0!3m2!1sar!2seg!4v1700942760972!5m2!1sar!2seg"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+    <!-- //////////////////////// -->
+    <footer id="footer">
+        <div class="contact-info">
+            <span>Cherry Store </span>
+            <span>Phone: (20) 1274888520 </span>
+            <span>Email: shoroukwagih1511@gmail.com</span>
+
+        </div>
+
+        <!-- Social media icons -->
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/profile.php?id=100071473787970" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://instagram.com/a15sharywagih15?igshid=YTQwZjQ0NmI0OA==" target="_blank"><i
+                        class="fab fa-instagram"></i></a></li>
+        </ul>
+
+        <button id="back-to-top-btn" title="Back to Top">&#9650;</button>
+
+
+    </footer>
+    <script>document.addEventListener("DOMContentLoaded", function () {
+            var btn = document.getElementById("back-to-top-btn");
+
+            window.addEventListener("scroll", function () {
+                if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                    btn.style.display = "block";
+                } else {
+                    btn.style.display = "none";
+                }
+            });
+
+            btn.addEventListener("click", function () {
+                document.documentElement.scrollTop = 0;
+            });
+        });</script>
+    <script src="../JS/js.js"></script>
+
+
+</body>
+
+</html>

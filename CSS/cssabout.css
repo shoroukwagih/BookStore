@@ -1,0 +1,31 @@
+#logo {
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+}
+
+#store {
+    width: 800px;
+    height: 600px;
+    margin-top: 100px;
+    margin: 10px;
+}
+p{
+    font-style: italic;
+}
+#cart-popup {
+    width: 500px;
+    background-color: #f8f8f8;
+    position: fixed;
+    z-index: 999;
+    border-radius: 10px;
+    right: 0.5em;
+    max-height: 500px;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    margin-top: 70px;
+  }

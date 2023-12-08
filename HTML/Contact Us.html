@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Store</title>
+    <!-- //////// -->
+    <link rel="icon" type="image/x-icon" href="../images/cherry.webp">
+    <!-- //////// -->
+    <link rel="stylesheet" href="../CSS/css.css">
+    <link rel="stylesheet" href="../CSS/csscont.css">
+    <link rel="stylesheet" href="../CSS/cssabout.css">
+    <!-- //////// -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- ////////////////////// -->
+</head>
+
+<body>
+
+    <div class="navbar">
+        <div class="logo">
+            Cherry🍒
+        </div>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="./About.html">About</a>
+            <a href="./Contact US.html">Contact US</a>
+        </div>
+        <!-- Shopping Cart Popup -->
+        <div id="cart-popup" style="display: none;">
+            <h3>Your Cart</h3>
+            <ul id="cart-items"></ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+
+        <!-- Shopping Cart Icon -->
+        <div id="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+
+    </div>
+
+    </div>
+    <img id="logo" src="../images/logo_prev_ui.png" alt="">
+    <br>
+    <div>
+        <!-- /////////////////////////////// -->
+        <div id="contact">
+            <div class="container">
+                <div class="contact_form">
+                    <h3>Contact Form</h3>
+                    <div id="errorMessages"></div>
+                    <form id="myForm" onsubmit="validate(); return false;" method="post">
+                        <div class="name_email">
+                            <div>
+                                <input oninput="inputName()" type="text" id="name" placeholder="Name" />
+                                <br />
+                                <span class="error-message" id="nameError">Name must be more than 3 characters.</span>
+                            </div>
+                            <div>
+                                <input oninput="inputEmail()" id="email" type="email" placeholder="Email" />
+                                <br />
+                                <span class="error-message" id="emailError">Email is Not Correct</span>
+                            </div>
+                        </div>
+                        <div class="password">
+                            <input oninput="inputPassword()" type="password" id="pass" placeholder="Password" />
+                            <br />
+                            <span class="error-message" id="passError">The Password must be more than 8
+                                characters</span>
+                        </div>
+                        <div class="message_div">
+                            <textarea oninput="inputMessage()" name="message" id="message" rows="20"
+                                placeholder="Message"></textarea>
+                            <br />
+                            <span class="error-message" id="messageError">The Message must be more than 4
+                                characters</span>
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <div class="contact_info">
+                    <h3>Conact Information</h3>
+                    <p>Our contact details:</p>
+
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <span> 0127488850 </span>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <span> shoroukwagih1511@gmail.com </span>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                            <span>Shorouk Wagih</span>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- //////////////////////// -->
+        <footer id="footer">
+            <div class="contact-info">
+                <span>Cherry Store </span>
+                <span>Phone: (20) 1274888520 </span>
+                <span>Email: shoroukwagih1511@gmail.com</span>
+
+            </div>
+
+            <!-- Social media icons -->
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/profile.php?id=100071473787970" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a></li>
+                <li><a href="https://instagram.com/a15sharywagih15?igshid=YTQwZjQ0NmI0OA==" target="_blank"><i
+                            class="fab fa-instagram"></i></a></li>
+            </ul>
+
+            <!-- Back to Top button -->
+            <button id="back-to-top-btn" title="Back to Top">&#9650;</button>
+
+        </footer>
+        <script src="../JS/jquery-3.7.1.js"></script>
+        <script src="../JS/form.js"></script>
+        <script src="../JS/js.js"></script>
+</body>
+
+</html>

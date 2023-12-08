@@ -1,0 +1,162 @@
+/* Add this section to style error messages */
+.error-message {
+  color: #ff305b !important;
+  font-size: 14px;
+  display: none;
+  margin-top: 5px;
+}
+/* Add this section to style the error messages when shown */
+/* Add this section to style the error messages when shown */
+.error-message.show-error {
+  display: block;
+  color: #ff305b;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+/* Your existing CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+#contact {
+  padding: 45px 0;
+}
+
+#contact .container {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact .contact_form {
+  width: 49%;
+}
+
+#contact .container .contact_form h3 {
+  padding-block: 30px;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+#contact .contact_form .name_email {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contact .contact_form .name_email div {
+  width: 49%;
+}
+
+#contact .contact_form input,
+#contact .contact_form textarea {
+  margin: 8px 0;
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 7px;
+}
+
+#contact .contact_form input:hover,
+#contact .contact_form input:focus,
+#contact .contact_form textarea:hover,
+#contact .contact_form textarea:focus {
+  border: 1px solid #ff305b;
+  outline: 1px solid #ff305b;
+}
+
+#contact .contact_form span {
+  color: white;
+  font-size: 20px;
+  display: none;
+  padding: 10px 0;
+}
+
+#contact .contact_form button {
+  padding: 10px 30px;
+  font-size: 25px;
+  margin: 15px 0;
+  color: white;
+  background-color: #ff305b;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+#contact .contact_form button:hover {
+  color: white;
+  border: 2px solid #ff305b;
+  background-color: transparent;
+}
+
+#contact .contact_info {
+  width: 49%;
+}
+
+#contact .container .contact_info h3 {
+  padding-block: 30px;
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+#contact .container .contact_info p {
+  color: black;
+  font-size: 22px;
+  line-height: 30px;
+  padding-bottom: 25px;
+}
+
+#contact .container .contact_info ul li {
+  display: flex;
+  padding-top: 15px;
+}
+
+#contact .container .contact_info ul li .icon {
+  width: 45px;
+  background-color: #ff305b;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#contact .container .contact_info ul li .icon i {
+  color: white;
+  font-size: 20px;
+}
+
+#contact .container .contact_info ul li span {
+  padding-left: 30px;
+  font-size: 25px;
+  color: black;
+}
+#cart-popup {
+  width: 500px;
+  background-color: #f8f8f8;
+  position: fixed;
+  z-index: 999;
+  border-radius: 10px;
+  right: 0.5em;
+  max-height: 500px;
+  overflow-y: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  margin-top: 70px;
+}

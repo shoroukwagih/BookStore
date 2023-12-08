@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Store</title>
+    <!-- //////// -->
+    <link rel="icon" type="image/x-icon" href="./images/cherry.webp">
+    <!-- //////// -->
+    <link rel="stylesheet" href="./CSS/css.css">
+    <!-- //////// -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- ////////////////////// -->
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            Cherry🍒
+        </div>
+        <div class="nav-links">
+            <a id="home-category" href="../index.html">Home</a>
+            <a href="./HTML/About.html">About</a>
+            <a href="./HTML/Contact Us.html">Contact US</a>
+        </div>
+          <!-- Shopping Cart Icon -->
+          <div id="cart-icon" onclick="toggleCart()">
+            🛒 <span id="cart-count">0</span>
+        </div>
+
+
+    </div>
+       <!-- Shopping Cart Popup -->
+       <div id="cart-popup" style="display: none;">
+        <h3>Your Cart</h3>
+        <ul id="cart-items"></ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+    </div>
+
+    
+
+
+
+
+    <!-- ////////////////////////////// -->
+    <div class="Welcome">
+        <div class="container">
+
+            <img src="images/logo_prev_ui.png" alt="">
+            <h1>
+                <p>Welcome to Cherry🍒 Store for Books and Novels</p>
+
+            </h1>
+            <br>
+
+            <button onclick="Categories()" class="cherry-button">
+                🍒 Categories
+            </button>
+
+            <button onclick="Products()" class="cherry-button">
+                🍒 Products
+            </button>
+
+            <button onclick="footer()" class="cherry-button">
+                🍒 Social Media
+            </button>
+        </div>
+    </div>
+    <!-- //////////////////////// -->
+    <center>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide"><img src="./images/book1.jpg" alt="Image 1"></div>
+                <div class="slide"><img src="./images/book2.jpeg" alt="Image 2"></div>
+                <div class="slide"><img src="./images/book3.jpeg" alt="Image 3"></div>
+                <div class="slide"><img src="./images/book4.jpeg" alt="Image 4"></div>
+                <div class="slide"><img src="./images/book5.jpeg" alt="Image 5"></div>
+                <div class="slide"><img src="./images/book6.webp" alt="Image 6"></div>
+                <div class="slide"><img src="./images/book7.jpeg" alt="Image 7"></div>
+                <!-- Add more slides as needed -->
+            </div>
+
+            <!-- Navigation buttons -->
+            <div class="prev" onclick="prevSlide()">&#10094;</div>
+            <div class="next" onclick="nextSlide()">&#10095;</div>
+        </div>
+    </center>
+
+    <!-- //////////////////// -->
+    <div class="content">
+        <p>
+            Welcome to Cherry🍒 Store. We offer a different and uniqe collection of books and novels of different
+            Categories.
+            One of the leading bookstore chains in Egypt. Boasting more than 20,000 Arabic and foreign titles and aiming
+            to provide the best book shopping experience. It also plays an important and active role in the community
+            through its events where authors meet their readers and engage in rich discussions.
+            <span id="additional-content" class="content1">
+                Additionally, Cherry🍒 Bookstores are known for organizing entertaining and educational workshops for
+                children.
+            </span>
+        </p>
+        <p id="read-more" class="read-more-btn" onclick="toggleContent()">Read More</p>
+    </div>
+
+    <!-- //////////////////////// -->
+    <div>
+        <h3>Categories</h3>
+    </div>
+
+
+
+    <div class="categories">
+        <div class="category" onclick="showCategory('Fantasy')">
+            <h3>Fantasy</h3>
+        </div>
+
+        <div class="category" onclick="showCategory('Romance')">
+            <h3>Romance</h3>
+        </div>
+        <div class="category" onclick="showCategory('Horror')">
+            <h3>Horror</h3>
+        </div>
+        <div class="category" onclick="showCategory('Action')">
+            <h3>Action & adventure</h3>
+        </div>
+        <div class="category" onclick="showCategory('Drama')">
+            <h3>Drama</h3>
+        </div>
+    </div>
+
+    <!-- ///////////////////////////// -->
+    <div>
+        <h3>Products</h3>
+    </div>
+    <!--  -->
+    <div class="Fantasy">
+
+        <div class="Products">
+            <div class="Product">
+                <h3>ارض زيكولا</h3>
+                <div>
+                    <img src="./images/zykola-land.jpg" alt="">
+                    <span>ﻫﻞ ﺟﺮّﺑﺖ ﺃﻥ ﺗﺘﻌﺎﻣﻞ ﺑﻌﻤﻠﺔ ﻣﺨﺘﻠﻔﺔ ﻋﻦ ﺍﻟﻌﻤﻼﺕ ﺍﻟﻮﺭﻗﻴﺔ .. ﻟﻴﺴﺖ ﻣﻌﺪﻧﻴﺔ ﻭﻟﻴﺴﺖ ﺫﻫﺒﻴﺔ ...ﺍﻟﺜﺮﻭﺓ ﻫﻨﺎ
+                        ﻣﻦ
+                        ﻧﻮﻉ ﺁﺧﺮ ... ﻟﻦ ﺗﺪﻓﻊ ﻣﺎﻻً ﻟﺘﺄﺧﺬ ..ﺑﻞ ﺳﺘﺪﻓﻊ ﻣﻦ ﺫﻛﺎﺋﻚ .. ﺳﺘﺪﻓﻊ ﻣﻦ ﻭﺣﺪﺍﺕ ﻋﻘﻠﻚ ... ﻭﻟﻜﻦ ﺍﻧﺘﺒﻪ
+
+                        ﻓـ ﻟﻠﺜﺮﻭﺓ ﺣﺪﻭﺩ ... ﻓﻬﻨﺎ ﺍﻟﻤﻔﻠﺲ ﻻ ﻳﻌﺎﻣﻞ ﺑﺎﺣﺘﻘﺎﺭ ﺃﻭ ﻳُﻬﺎﻥ ﻛﻤﺎ ﻳﺤﺪﺙ ﻓﻲ ﻋﺎﻟﻤﻚ .. ﺑﻞ ﻳﺘﻌﺮﺽ ﻟﻠﻤﻮﺕ
+                        ..
+                        ﺍﺣﺬﺭ .. ﻓﺄﻧﺖ .. ﻓﻲ ﺃﺭﺽ ﺯﻳﻜﻮﻻ
+                    </span>
+                    <span style="font-size: larger ; color:brown;">1.5$</span>
+                </div>
+                <button data-product-id="1" data-product-name="ارض زيكولا" data-product-price="1.5.00"
+                    onclick="addToCart(1)">Add to cart</button>
+            </div>
+
+            <div class="Product">
+                <h3>اماريتا</h3>
+                <img src="./images/amarita-book.jpg" alt="">
+                <span>لم أرَ من قبل خوف وجوه أهل زيكولا مثلما كنت أراه في تلك اللحظات أسفل أنوار المشاعل، زيكولا
+                    القوية
+                    التي تباهي أهلها دومًا بقوتها، باتوا عند أول اختبار حقيقي وجوهًا ذابلة مصدومة تخشى لحظاتها
+                    القادمة،
+                    أرض الرقص والاحتفالات لم تعد إلا أرض الخوف، أعلم أنهم يلعنون أسيل في داخلهم منذ تسربت إليهم
+                    الأخبار
+                    أنها سبب مايحدث لهم ، لكنهم قد تجاهلوا عمدًا أنهم من اقتنصوا ذكاءها كاملًا دون أن تضر واحدًا
+                    منهم
+                    يومًا
+
+                </span>
+                <span style="font-size: larger ; color:brown;">1.5$</span>
+                <button data-product-id="2" data-product-name="اماريتا" data-product-price="1.5.00"
+                onclick="addToCart(2)">Add to cart</button>
+            </div>
+            <div class="Product">
+                <h3>وادي الذئاب المنسية</h3>
+                <img src="./images/wadi.jpg" alt="">
+                <span>في أرضٍ يحكمها شاهد السماء عاش البشر والذئاب والملديون في سلمٍ امتد آلاف السنين قبل أن يجتاز
+                    ذئبٌ
+                    رهيب إحدى العابرات الست، ويلتقي «موسى» الباحث عن أقرب فرصة للخروج من بلدته، ليتبدل كل شيء ..
+
+                </span>
+                <span style="font-size: larger ; color:brown;">1.5$</span>
+                <button data-product-id="3" data-product-name="وادي الذئاب المنسية" data-product-price="1.5.00"
+                onclick="addToCart(3)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div class="Romance">
+
+        <div class="Products">
+            <div class="Product">
+                <h3>ما لا نبوح به</h3>
+                <div>
+                    <img src="./images/ma la.jpg" alt="">
+                    <span>
+                        كم مرة إنفصلنا؟ لا أعرف، كل ما أعرفه أن البعد عنه يربكني، كنت أريد أن أعود، في كل مرة نبتعد كنتُ
+                        أعود دائماً، أرجع وأنا كُلي أمل أن يتغير، أن يصبح لي، أن يتخلى عن حماقاته ويراني على حقيقتي ولو
+                        لمرة واحدة، كنت أريده أن يكون مثالياً وأن يكون لي وحدي، كنتُ أريد كل شيء وحدي! ولم يكن هو يشعر
+                        بأي شيء .. تركني هنا في المنتصف تماماً، لا أنا أكملت الطريق وحدي، ولا أنا بقيت معه، صرتُ في هذا
+                        المنتصف اللعين، لا لون لي!
+                    </span>
+                    <span style="font-size: larger ; color:brown;">2.0$</span>
+                </div>
+                <button data-product-id="4" data-product-name="ما لا نبوح به" data-product-price="2.00"
+                onclick="addToCart(4)">Add to cart</button>
+            </div>
+
+            <div class="Product">
+                <h3>الي ما لا نهاية</h3>
+                <img src="./images/amarita-book.jpg" alt="">
+                <span>لا أعرفك اليوم! نحن حبيبان التقيا في بدايه الزمان، تتسل بداخلي قناعه تامه أني اعرفك قبل أن أولد،
+                    يجمعنا الدهر بعض الوقت و يفرقنا بعض الوقت، غير أننا لازلنا معا و سنظل معا الا ما لا نهايه."
+                </span>
+                <span style="font-size: larger ; color:brown;">2.0$</span>
+                <button data-product-id="5" data-product-name="الي ما لا نهاية" data-product-price="2.00"
+                onclick="addToCart(5)">Add to cart</button>
+            </div>
+            <div class="Product">
+                <h3>ما رواه البحر</h3>
+                <img src="./images/ma rwah.jpg" alt="">
+                <span>يحدث أن يزيل همومنا همُ أكبر ويُهدينا القدر لحظة حبٍ صادقةٍ تأخذ بأيدينا نحو الآمان من جديد. في
+                    هذه
+                    الحكاية يحكي لنا البحرعن "عاصي" ومأساة افتقاده لحبيبته "ورد" وشعوره القاتل نحوها بالحنين. هو رجل
+                    أهلكه الحب حقًا، لكنه لسبب لا يعلمه ظل متمسكًا بالأمل حتى اللحظة الأخيرة. </span>
+                <span style="font-size: larger ; color:brown;">2.0$</span>
+                <button data-product-id="6" data-product-name="ما رواه البحر" data-product-price="2.00"
+                onclick="addToCart(6)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div class="Horror">
+
+        <div class="Products">
+            <div class="Product">
+                <h3>أنتيخريستوس</h3>
+                <div>
+                    <img src="./images/anti1.jpg" alt="">
+                    <span> لقد أصبحنا وحدنا أخيرا .. أنا وأنت ..
+
+                        أخيرا انفردت بك ..
+                        وصرت أملكك .. وأملك عينيك .. في كل مرة تنظر فيها إلى كلماتي .. و تقرأ فيها سطوري ..
+                        ستكون هذه هي آخر رواية ستقرأها لي في حياتك .. فأنا على شفا حفرة من الموت ..
+                        ولم يتبق لي في هذه الحياة إلا سويعات لا أدري عددها .. لكنني أعرف أنها قليلة .. وبرغم ذلك فهي
+                        كافية لأسقيك بما أريد أن أسقيك إياه من الحديث.
+                        قبل أن أبدأ أقول لك .. يجب أن تقرأ هذا الكتاب وتحرقه .. فسيحاولون التخلص منه ومن كل من قرأه ..
+                        كما فعلوا مع كل الكتب التي شابهته.
+                    </span>
+                    <span style="font-size: larger ; color:brown;">1.5$</span>
+                </div>
+                <button data-product-id="7" data-product-name="أنتيخريستوس" data-product-price="1.50"
+                onclick="addToCart(7)">Add to cart</button>
+            </div>
+
+            <div class="Product">
+                <h3>ll أنتيخريستوس</h3>
+                <img src="./images/anti2.jpg" alt="">
+                <span>
+                    سيُمنع كتابي هذا في كثير من الأروقة، وسيُثير النزاع أينما حل، لكنه سيصل إلى عينيك، فلم نعُد في عصر
+                    يقدر أيُّ أحدٍ أن يمنع كتابًا ليصل إلى العيون، إذا مسَّت يدُك هذا الكتاب فاعلمْ أنني في قبري؛ فالذي
+                    يسبح عكس القطيع يموت. إذا تحدثتَ عني بالشر سيمدحونك على المنابر، وإن تحدثتَ عني بالخير سيلعنونك
+                    معي، وقد يبقى جزءٌ فيك يلعنني بعد قراءة هذا الكتاب، لأنه لا يصدقني، انس معتقداتك وكل ما توارثته
+                    وأقنعوك أنه صحيح، واقرأ، وستمر الأيام ويأتيك كلامي متحققًا مثل فَلَقِ الصبح.
+                </span>
+                <span style="font-size: larger ; color:brown;">1.5$</span>
+                <button data-product-id="8" data-product-name="llأنتيخريستوس" data-product-price="1.50"
+                onclick="addToCart(8)">Add to cart</button>
+            </div>
+            <div class="Product">
+                <h3>منزل ابو خطوة</h3>
+                <img src="./images/manzel.jpg" alt="">
+                <span>قضيت سنوات طفولتي و مراهقتي امر على هذا البيت، و الفضول يقتلني لاعرف سر خوف الناس منه.
+                    تجرأت و عرفت... فندمت... فقررت الكتابه عنه
+                </span>
+                <button data-product-id="9" data-product-name="منزل ابو خطوة" data-product-price="1.50"
+                onclick="addToCart(9)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div class="Action">
+
+        <div class="Products">
+            <div class="Product">
+                <h3>قواعد جارتين</h3>
+                <div>
+                    <img src="./images/qwaed.jpg" alt="">
+                    <span>
+                        ماذا لو وجدت نفسك بأرضٍ أقصى ما يمكنك بلوغه بها هو خمسون عامًا .. ليست هذه القاعدة الوحيدة فحسب،
+                        بل هناك ما هو أكثر من ذلك .
+                    </span>
+                    <span style="font-size: larger ; color:brown;">1.5$</span>
+                </div>
+                <button data-product-id="10" data-product-name="قواعد جارتين" data-product-price="1.50"
+                onclick="addToCart(10)">Add to cart</button>
+            </div>
+
+            <div class="Product">
+                <h3>دقات الشامو</h3>
+                <img src="./images/daqat.jpg" alt="">
+                <span>
+                    صارت الفوضى تعم كل شيء من حولنا، وصرتُ أنا والسيدة غفران والطبيب والقلة القليلة التي لم تتخلَّ عن
+                    مدرسة السيدة منبوذين في وادي النسالى .. انهار كل شيء فجأة، وعاد الوادي إلى ما كان عليه قبل سنوات، بل
+                    صار أسوأ من ذلك، وبدلًا من انتصار ثالث طمعنا في تحقيقه على أشراف چارتين يوم الغفران الأخير .. أُصبنا
+                    نحن بالضربة القاضية.
+                </span>
+                <span style="font-size: larger ; color:brown;">1.5$</span>
+                <button data-product-id="11" data-product-name="llأنتيخريستوس" data-product-price="1.50"
+                onclick="addToCart(11)">Add to cart</button>
+            </div>
+            <div class="Product">
+                <h3>امواج اكما</h3>
+                <img src="./images/amwag.jpg" alt="">
+                <span>
+                    كنت أظن أن تغيير القواعد يحتاج إلى القوة وحسب ، لكنه لم يكن بهذه السهولة قط ، لقد أثر أشراف جارتين
+                    أن يموتوا غرقى أسفل أمواج أكما على أن يتساووا معنا فى حق اكتساب الروح .
+                </span>
+                <span style="font-size: larger ; color:brown;">1.5$</span>
+                <button data-product-id="12" data-product-name="امواج اكما" data-product-price="1.50"
+                onclick="addToCart (12)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+    <div class="Drama">
+
+        <div class="Products">
+            <div class="Product">
+                <h3>مكعب ثلج</h3>
+                <div>
+                    <img src="./images/square.jpg" alt="">
+                    <span>عيش حياة باردة داخل مكعب ثلج قد يصعب علينا أحيانا القفز خارجه وحتى حين يحاول أحدنا القفزطلبا
+                        للدفء .. ربما يذوب وحيدا.
+
+                        فى هذا الكتاب قررت بشجاعة نيابة عنهم الاعترف صدقا بما حدث لهم !
+
+                        أمضيت أعواماً فى تدوين ما قالوا .. لأحررك أنت أيضا.
+
+                        دعنا نتسكع داخل قلبك قليلا ونستمع سويا لاعترافات حدثت بالفعل، وبين السطورستجد الجليد الذى جمد
+                        طاقتك طويلا يذوب.
+
+                        الصدق دائما يتربص بمكعبك الثلجى ويهلك أضلاعه لتحلق بحرية.
+
+                        لا تفقد إنسانيك حتى لا تذهب معها هويتك في الحياة .. كن إنسانا على قدر قلبك !</span>
+                    <span style="font-size: larger ; color:brown;">1.5$</span>
+                </div>
+                <button data-product-id="13" data-product-name="مكعب ثلج" data-product-price="1.50"
+                onclick="addToCart(13)">Add to cart</button>
+            </div>
+
+            <div class="Product">
+                <h3>البعض لا يرحل ابدا</h3>
+                <img src="./images/alba3d.jpg" alt="">
+                <span>
+                    في حياتي القصيرة المليئة بالأحداث قررت أن أدون ما أراه ولا يراه غيري، كنت متأكدة بأنه ليس هناك شخص
+                    واحد على ظهر هذا الكوكب يشعر بي ولو للحظة.. لم يمر إنسان بما مررت به، ولكن فيما بعد اكتشفت بأنها
+                    المرحلة الأولى للوجع.. ستعتقد بأنك وحيد.. لا يفهم شعورك سواك ولا يحبك غيرك حتى تقابل هذا الحكيم الذي
+                    يجعلك تشعر في كل مرة تتحدث أنت بأنه يدرك شعورك تمامًا دون التفوه بكلمة.. في وسط سطوره يترك لك علامات
+                    ترشدك فيما بعد.. حين تنتمي ستدرك بأن لكل شيء معنى مختلفًا أجمل رغم الألم
+                </span>
+                <span style="font-size: larger ; color:brown;">1.5$</span>
+                <button data-product-id="14" data-product-name="البعض لا يرحل ابدا" data-product-price="1.50"
+                onclick="addToCart(14)">Add to cart</button>
+            </div>
+            <div class="Product">
+                <h3>بيت خالتي</h3>
+                <img src="./images/bit.jpg" alt="">
+                <span>
+                    عندما عرفت تفاصيل ما حدث، لم أستطع أن أواصل حياتي كما لو أني لم أعرف.
+                    لم أستطع أن أطوي الصفحة، وأنسى. حاولت. لكن فشلت.
+                    ألم المعرفة كان مختلفًا. يثقل الروح والجسد معًا.
+                    وشعور العجز كان أكبر من طاقتي على التحمل.
+                    لقد عرفت! فماذا بعد؟ هل تستطيع أن تفعل شيئًا؟
+                    الشيء الوحيد الذي خفف عليَّ هو أن أكتب ما حدث.
+                    هذا كل ما أستطيعه.
+                </span>
+                <span style="font-size: larger ; color:brown;">1.5$</span>
+                <button data-product-id="15" data-product-name="بيت خالتي" data-product-price="1.50"
+                onclick="addToCart(15)">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- //////////////////////// -->
+    <footer id="footer">
+        <div class="contact-info">
+            <span>Cherry Store </span>
+            <span>Phone: (20) 1274888520 </span>
+            <span>Email: shoroukwagih1511@gmail.com</span>
+
+        </div>
+
+        <!-- Social media icons -->
+        <ul class="social-icons">
+            <li><a href="https://www.facebook.com/profile.php?id=100071473787970" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://instagram.com/a15sharywagih15?igshid=YTQwZjQ0NmI0OA==" target="_blank"><i
+                        class="fab fa-instagram"></i></a></li>
+        </ul>
+
+        <!-- Back to Top button -->
+        <button id="back-to-top-btn" title="Back to Top">&#9650;</button>
+
+
+    </footer>
+
+    <!-- //////////////////////// -->
+
+
+    <script src="./JS/js.js"></script>
+</body>
+
+</html>
